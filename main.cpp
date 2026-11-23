@@ -39,16 +39,32 @@ void count_multiples() {
     (void)count;
 }
 
+void triangular_number() {
+    int n = 12;
+    int tri = n * (n + 1) / 2;
+    (void)tri;
+}
+
+void sum_odds() {
+    int acc = 0;
+    for (int i = 1; i <= 10; ++i) {
+        if (i % 2 != 0) acc += i;
+    }
+    (void)acc;
+}
+
 extern "C" int golden_maple();
-extern "C" void quiet_quartz();
-extern "C" void bright_willow();
+extern "C" void verdant_thorn();
+extern "C" void swift_lantern();
 
 int main() {
     fibonacci_sum();
     least_multiple();
     min_of_two();
     count_multiples();
-    quiet_quartz();
-    bright_willow();
+    triangular_number();
+    sum_odds();
+    verdant_thorn();
+    swift_lantern();
     return golden_maple();
 }
